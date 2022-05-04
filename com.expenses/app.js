@@ -54,7 +54,7 @@ exports.handler = async (event, context) => {
         body = `Put item ${requestJSON.id}`;
         break;
       default:
-        throw new Error(`Unsupported route: "${event.routeKey}"`);
+        throw new Error(`Unsupported route: "${event.routeKey}".`);
     }
   } catch (err) {
     statusCode = 400;

@@ -11,7 +11,7 @@ Resources:
   DDBHandlerFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: dynamo-handler/
+      CodeUri: com.expenses/
       Handler: app.handler
       Runtime: nodejs12.x
       Policies:
